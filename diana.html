@@ -2,13 +2,82 @@
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Мій перший сайт</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio | Diana Satanovska</title>
+    <style>
+        /* Основні налаштування фону */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #ffffff;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            max-width: 500px;
+            transition: transform 0.3s ease;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-10px);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background: linear-gradient(to right, #fff, #81a1c1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+
+        /* Стильний футер */
+        footer {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .author-tag {
+            background: #ffffff;
+            color: #1e3c72;
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-weight: bold;
+            display: inline-block;
+        }
+    </style>
 </head>
 <body>
-    <h1>Практичне завдання 2</h1>
-    <p>Вітаю! Це сторінка, створена у Visual Studio Code.</p>
-    <footer>
-        <p>Виконала: Сатановська Діана Олегівна</p>
-    </footer>
+
+    <div class="glass-card">
+        <h1>Практична робота 2</h1>
+        <p>Вітаю! Вибачте, що всі роботи здаю під кінець навчального року <strong>HTML5</strong> та <strong>CSS3</strong> у середовищі Visual Studio Code на macOS.</p>
+        
+        <footer>
+            <p>Студентка:</p>
+            <div class="author-tag">Сатановська Діана Олегівна</div>
+        </footer>
+    </div>
+
 </body>
 </html>
